@@ -27,6 +27,10 @@ import logging
 import argparse
 import signal
 
+from db import wtwDB
+from gps import wtwGPS
+from scanner import wtwScanner
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -111,4 +115,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    

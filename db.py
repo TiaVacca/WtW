@@ -7,9 +7,9 @@ class wtwDB:
     def __init__(self, db_path):
         self.conn = sqlite3.connect(db_path)
         self.conn.execute("PRAGMA journal_mode=WAL;") #ideally for sd cards
-        self.create_tables()
+        self._create_tables()
 
-    def create_tables(self):
+    def _create_tables(self):
         self.conn.execute('''
             CREATE TABLE IF NOT EXISTS networks (
                 bssid       TEXT PRIMARY KEY,
