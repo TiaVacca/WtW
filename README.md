@@ -51,7 +51,7 @@ This software is under MIT license. Just tag me.
     └────────────────────────┬────────────────────────────────┘
                              │
     ┌────────────────────────▼────────────────────────────────┐
-    │         COLLECTOR (plugin system)  ← qui si estende     │
+    │         COLLECTOR (plugin system)  ← here it extends    │
     │                                                         │
     │  ┌─────────────┐  ┌──────────────┐  ┌───────────────┐   │
     │  │  Passive    │  │ Active-Deauth│  │ Handshake-    │   │
@@ -60,7 +60,7 @@ This software is under MIT license. Just tag me.
     │  │  airodump)  │  │              │  │               │   │
     │  └─────────────┘  └──────────────┘  └───────────────┘   │
     │                                                         │
-    │  Ogni modulo implementa la stessa interfaccia:          │
+    │  every module implements it's own interface:            │
     │    start() / stop() / yield Packet()                    │
     └─────────────────────────────────────────────────────────┘
 
